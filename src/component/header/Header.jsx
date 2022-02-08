@@ -38,13 +38,13 @@ function Header() {
           </div>
           <div className={openMenu ? "nav nav-vis" : "nav "}>
             <ul className="nav__inner">
-              <Link to="/" className="active">
+              <Link to="podcast/" className="active">
                 <li>Home</li>
               </Link>
-              <Link to="/blog">
+              <Link to="podcast/blog">
                 <li>Blog</li>
               </Link>
-              <Link to="/about">
+              <Link to="podcast/about">
                 <li>About</li>
               </Link>
               <a onClick={platformSlider}>
