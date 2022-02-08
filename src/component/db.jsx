@@ -1,0 +1,62 @@
+export const footerItem = [
+  {
+    title: "Footer",
+    textLink1: "Link",
+    link1: "/",
+    textLink2: "Business",
+    link2: "/",
+    textLink3: "About",
+    link3: "/",
+    textLink4: "Hosts",
+    link4: "/",
+    textLink5: "Listen",
+    link5: "/",
+  },
+  {
+    title: "About",
+    textLink1: "Show Hosts",
+    link1: "/",
+    textLink2: "Podcast",
+    link2: "/",
+    textLink3: "Guests",
+    link3: "/",
+    textLink4: "Episodes",
+    link4: "/",
+    textLink5: "Subscribe",
+    link5: "/",
+  },
+  {
+    title: "Links",
+    textLink1: "Apple Podcasts",
+    link1: "/",
+    textLink2: "Blog",
+    link2: "/",
+    textLink3: "Donate",
+    link3: "/",
+    textLink4: "More",
+    link4: "/",
+    textLink5: "Ask",
+    link5: "/",
+  },
+  {
+    title: "More",
+    textLink1: "Link",
+    link1: "/",
+    textLink2: "Business",
+    link2: "/",
+    textLink3: "About",
+    link3: "/",
+    textLink4: "Hosts",
+    link4: "/",
+    textLink5: "Listen",
+    link5: "/",
+  },
+];
+
+export const blogItem = [
+  {
+    blogTitle: "Sample Blog Post",
+    blogText:
+      "This is a sample blog post! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet eros leo, eget consequat orci viverra nec. Suspendisse pellentesque sem metus, et mollis purus auctor in. Suspendisse congue quam eros, vel cursus ante semper id. Nam malesuada tempus risus, ut ullamcorper risus elementum eu. Morbi lacus quam, mattis sit amet ipsum sed, vestibulum consectetur tortor. Vestibulum interdum convallis mauris, eget dictum nisl.Nam tellus justo, auctor sed malesuada id, consequat nec ante. Vivamus tempor massa arcu, et hendrerit est pulvinar non. Nam tempus velit justo. Praesent pulvinar lobortis sem quis tristique.",
+  },
+];

@@ -1,0 +1,353 @@
+@import "../var";
+
+.header {
+  color: $main-font;
+  background-color: $bg;
+  padding: 33px 0;
+  &__inner {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .nav {
+      &__inner {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        list-style: none;
+        font-weight: 600;
+
+        li {
+          padding-left: 40px;
+
+          &:hover {
+            color: $hover-font;
+            transition: 0.3s;
+          }
+        }
+
+        .active {
+          color: $hover-font;
+          transition: 0.3s;
+        }
+        .search-icons {
+          font-size: 1.2rem;
+        }
+      }
+      &__menu {
+        display: none;
+      }
+    }
+    .nav-hiden {
+      display: none;
+    }
+    a {
+      text-decoration: none;
+      color: $main-font;
+      cursor: pointer;
+    }
+  }
+
+  .subscribe__inner {
+    background-color: $platform-bg;
+    width: 65%;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    transition: 0.2s;
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-align-last: left;
+      padding: 70px 60px 0px;
+      color: $footer-down;
+    }
+
+    .close-button {
+      width: 15px;
+      position: absolute;
+      top: 5%;
+      right: 15px;
+      cursor: pointer;
+    }
+
+    .platforms {
+      padding: 50px 100px 50px 50px;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.15s;
+
+      li {
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.15s;
+        }
+      }
+
+      img {
+        width: 75%;
+      }
+    }
+  }
+  .subscribe__inner-vis {
+    display: block;
+    transition: 0.2s;
+  }
+  .search-form {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: $bg;
+
+    .search-input {
+      width: 250px;
+      height: 2.8rem;
+      background-color: $bg;
+      color: $main-font;
+      border: none;
+      outline: 1px solid $main-font;
+      border-radius: 3px;
+      position: absolute;
+      top: 6rem;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: Rubik, sans-serif;
+      padding: 0 50px 0 15px;
+
+      &:focus {
+        outline: 2px solid $hover-font;
+      }
+    }
+    svg {
+      position: absolute;
+      top: 98px;
+      padding-right: 2px;
+      fill: $hover-font;
+      z-index: 100;
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1025px) {
+  .header {
+    &__inner {
+      .logo {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
+
+    .subscribe__inner {
+      background-color: $platform-bg;
+      width: 65%;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      transition: 0.2s;
+
+      p {
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: left;
+        padding: 70px 60px 0px;
+      }
+
+      .close-button {
+        width: 15px;
+        position: absolute;
+        top: 5%;
+        right: 15px;
+        cursor: pointer;
+      }
+
+      .platforms {
+        padding: 30px 60px 20px 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 50px;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.15s;
+
+        li {
+          text-align: left;
+          &:hover {
+            transform: scale(1.1);
+            transition: 0.15s;
+          }
+        }
+
+        img {
+          width: 40px;
+        }
+      }
+    }
+    .subscribe__inner-vis {
+      display: block;
+      transition: 0.2s;
+    }
+
+    .search-form {
+      .search-input {
+        width: 180px;
+        height: 1.8rem;
+        top: 4.5rem;
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding: 0 50px 0 15px;
+        margin-right: 7px;
+      }
+      svg {
+        height: 1.7rem;
+        position: absolute;
+        top: 72.5px;
+        // right: 12.75rem;
+        // padding-left: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .header {
+    padding-top: 20px;
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      .logo {
+        text-align: left;
+        width: 90%;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+      .nav {
+        display: none;
+        &__inner {
+          padding-top: 50px;
+          flex-direction: column;
+          align-items: flex-start;
+          font-size: 0.9rem;
+
+          li {
+            padding: 0;
+            padding-bottom: 25px;
+          }
+          .search-icons {
+            font-size: 1.5rem;
+          }
+        }
+        &__menu {
+          display: block;
+          font-size: 1.8rem;
+        }
+      }
+      .nav-vis {
+        display: block;
+      }
+    }
+
+    .subscribe__inner {
+      background-color: $platform-bg;
+      width: 95%;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      transition: 0.2s;
+
+      p {
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: left;
+        padding: 30px 50px 0px;
+      }
+
+      .close-button {
+        width: 15px;
+        position: absolute;
+        top: 5%;
+        right: 15px;
+        cursor: pointer;
+      }
+
+      .platforms {
+        padding: 30px 60px 20px 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 50px;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.15s;
+
+        li {
+          text-align: left;
+          &:hover {
+            transform: scale(1.1);
+            transition: 0.15s;
+          }
+        }
+
+        img {
+          width: 40px;
+        }
+      }
+    }
+    .subscribe__inner-vis {
+      display: block;
+      transition: 0.2s;
+      z-index: 2;
+    }
+
+    .search-form {
+      .search-input {
+        width: 180px;
+        height: 1.8rem;
+        top: 17rem;
+        left: 5rem;
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding: 0 50px 0 15px;
+      }
+      svg {
+        height: 1.7rem;
+        position: absolute;
+        top: 17rem;
+        left: 18.2rem;
+        z-index: 1;
+        // padding-left: 5px;
+      }
+    }
+  }
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}

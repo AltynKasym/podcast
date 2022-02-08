@@ -1,0 +1,23 @@
+@import "../var";
+
+.blog {
+  &__item {
+    background-color: $item-bg;
+  }
+  &__title {
+    margin: 0;
+    padding: 100px;
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1.5;
+  }
+  &__text {
+    margin: 0;
+    padding: 50px 200px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: left;
+    color: $main-font;
+    background-color: $bg;
+  }
+}
