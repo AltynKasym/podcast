@@ -1,1 +1,1 @@
-altynkasym.github.io/podcast
+http://altynkasym.github.io/podcast
